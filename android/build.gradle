@@ -1,22 +1,23 @@
 buildscript {
   repositories {
     jcenter()
+    google()
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:2.2.0'
+    classpath 'com.android.tools.build:gradle:3.4.0'
   }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-  compileSdkVersion 23
-  buildToolsVersion "23.0.3"
+  compileSdkVersion 28
+  buildToolsVersion "28.0.3"
 
   defaultConfig {
     minSdkVersion 16
-    targetSdkVersion 23
+    targetSdkVersion 28
     versionCode 1
     versionName "1.0"
   }
@@ -33,9 +34,10 @@ repositories {
   }
   mavenCentral()
   jcenter()
+  google()
 }
 
 dependencies {
-  compile 'com.facebook.react:react-native:+'
-  compile 'com.flurry.android:analytics:7.0.0@aar'
+  implementation 'com.facebook.react:react-native:+'
+  implementation 'com.flurry.android:analytics:7.0.0@aar'
 }
