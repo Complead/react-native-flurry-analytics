@@ -1,6 +1,6 @@
-import android.content.Context;
-
 package com.xxsnakerxx.flurryanalytics;
+
+import android.content.Context;
 
 import android.support.annotation.Nullable;
 
